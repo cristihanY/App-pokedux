@@ -1,0 +1,29 @@
+.PokemonList{
+    display: grid;
+    grid-template-columns:  repeat(4, 1fr);
+    gap: 1rem;
+    margin: 3rem;
+    padding: 0 3rem 3rem;
+    
+}
+
+/* Estilos para tablet en orientación vertical */
+@media (max-width: 768px) {
+    .PokemonList {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 2rem;
+        padding: 0 2rem 2rem;
+    }
+}
+
+/* Estilos para dispositivos móviles y pantallas pequeñas */
+@media (max-width: 480px) {
+    .PokemonList {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 1rem;
+        padding: 0 1rem 1rem;
+    }
+}
+
+
+

@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&family=Noto+Sans:wght@100&display=swap');
+
+.contendHeader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    z-index: 100; /* Asegúrate de que el encabezado tenga una mayor prioridad en el apilamiento */
+  }
+  .app-lighth{
+    background-color: rgba(242, 242, 242, 0.95);
+    color: #000000; 
+  }
+  
+  .app-darkh{
+    background-color: rgba(144, 144, 144, 0.95);
+    color: #f0f0f0; 
+    
+  }
+  .contendHeader header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 45px;
+    padding: 0px 12px;
+    max-width: 1200px; /* Limita el ancho del encabezado si es necesario */
+    margin: 0 auto; /* Centra el encabezado horizontalmente */
+  }
+  
+  .figureIcon {
+    width: 25px;
+    height: 30px;
+    margin: 0;
+    cursor: pointer;
+  }
+
+  .figureIcon2 {
+    width: 25px;
+    height: 30px;
+    margin: 0;
+    cursor: pointer;
+  }
+  
+  .icon {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .figureIconLogo {
+    width: 120px;
+    height: 30px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .iconLogo {
+    margin: 5px;
+  }
+  
+  .menuOptions {
+    display: none; /* Ocultar el menú en dispositivos móviles y tablets */
+  }
+  
+  .switchButton {
+    display: block;
+    margin-top: 10px;
+  }
+
+  
+   
+
+  /* Estilos para tablets y pantallas más grandes */
+  @media (min-width: 768px) {
+    .menuOptions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      /* Ajusta el valor de 'width' para controlar el espacio entre el logo y las opciones */
+    }
+
+    .menuOptions2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 60%;
+        height: 100%;
+        /* Ajusta el valor de 'width' para controlar el espacio entre el logo y las opciones */
+      }
+    .menuOptions a{
+        padding: 0px 8px 0px 8px;
+        height: 100%;
+        width: 100%;
+        text-decoration: none;
+        font-family: 'Mukta';
+        font-size: 15px;
+        color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+
+    }
+
+    .app-lighths a{
+      color: #000000; 
+    }
+    
+    .app-darkhs a{
+      color: #f0f0f0; 
+      
+    }
+    
+    .menuOptions a:hover{
+    background-color: rgb(195, 90, 255);    
+    color: white;  
+    }
+    .optionsLight{
+        width: 400px;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 60px;
+        justify-content: center;
+        align-items: center;
+      }
+      .optionsLight2{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 60px;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .imgContend{
+        width: 100%;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+      }
+  
+    .switchButton {
+      display: block;
+      margin-top: 0;
+    }
+    
+    .hideLogo {
+        display: none;
+      }
+  
+    /* Ocultar elementos que no se deben mostrar en PCs */
+  
+    .figureIconLogo {
+      margin: 0;
+    }
+  }
+  

@@ -1,0 +1,42 @@
+.menuMovil {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    background-color: #ffffff; /* Ajusta el color de fondo según tus preferencias */
+    z-index: 9999; /* Asegúrate de que el z-index sea suficientemente alto para que aparezca encima de los demás elementos */
+    padding: 20px; /* Agrega un espacio interior para el contenido del menú */
+  }
+  
+  .menuMovil a {
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 5px;
+    color: #000; /* Ajusta el color del texto según tus preferencias */
+    font-size: 16px; /* Ajusta el tamaño de fuente según tus preferencias */
+  }
+  
+  /* Estilos para los enlaces cuando se les hace hover */
+  .menuMovil a:hover {
+    background-color: #db29ff; /* Ajusta el color de fondo al hacer hover según tus preferencias */
+  }
+  
+  .hideButton {
+    top: 10px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: grid;
+    justify-content:right ;
+    align-items: center;
+
+  }
+
+  .hideButton :hover{
+    background-color: #f0a5ff;
+    border-radius:5px ;
+  }

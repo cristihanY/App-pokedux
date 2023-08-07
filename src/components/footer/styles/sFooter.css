@@ -1,0 +1,26 @@
+.footerGeneral footer{
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    position: absolute;
+    margin-bottom: 0px;
+    width: 100%;
+    height: 120px;
+    text-align: center;
+
+    margin: 0px;
+  }
+
+  .app-lightf{
+    background-color: #cbcbcb;
+    color: #000000; 
+  }
+  
+  .app-darkf{
+    background-color: #1e1e1e;
+    color: #f0f0f0; 
+  }
