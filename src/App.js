@@ -24,7 +24,7 @@ function App() {
   
   useEffect(() => {
    dispatch(fechPokemonsWithDetails());
-  }, []);
+  }, [dispatch]);
 
   const filteredPokemons = pokemons.filter((pokemon) =>
   pokemon.name.toLowerCase().includes(searchTerm.toLowerCase())
