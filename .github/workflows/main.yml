@@ -21,7 +21,8 @@ jobs:
 
       - name: Build the Docker image
         run: | 
-          docker build -t cristihan/App-pokedux:latest .
+          docker build -t cristihan/app-pokedux:latest .
           docker images
       - name: Push to Docker repository
-        run: docker push cristihan/App-pokedux:latest
+        run: docker push cristihan/app-pokedux:latest
+        
