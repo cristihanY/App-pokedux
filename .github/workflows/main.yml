@@ -19,9 +19,8 @@ jobs:
           username: ${{ secrets.DOCKER_USER }}
           password: ${{ secrets.DOCKER_PASSWORD }}
       
-      - name: Build and push
-        uses: docker/build-push-action@v4
-        with:
-          push: true
-          tags: cristihan/app-pokedux:latest
+      - name: Build the Docker image
+        run: | 
+          docker build -t cristihan/demo:latest .
+          docker images
         
