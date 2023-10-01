@@ -14,7 +14,7 @@ jobs:
 
     steps:
 
-      - name: Pull docker image
+      - name: Pull docker image pokedux
         run: sudo docker pull cristihan/app-pokedux:latest
 
       - name: Delete old docker container
@@ -28,3 +28,4 @@ jobs:
 
       - name: Run Docker Container
         run: sudo docker run -d -p 3000:3000 --name app-pokedux-container cristihan/app-pokedux
+#como esto es nuevo
