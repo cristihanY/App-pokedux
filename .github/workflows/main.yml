@@ -23,7 +23,7 @@ jobs:
 
     - name: Build the Docker image
       run: |
-        docker build . --file Dockerfile --tag cristihan/app-pokedux:$(date +%s)
+        docker build . --file Dockerfile --tag cristihan/app-pokedux:latest
         docker images
     - name: Push to Docker repository
-      run: docker push cristihan/app-pokedux:$(date +%s)   
+      run: docker push cristihan/app-pokedux:latest
