@@ -1,5 +1,5 @@
+#Use base image for node application 
 FROM node:19-alpine as builder
-
 # Set working directory to /app inside the container image 
 WORKDIR /app 
 # Copy app files 
@@ -24,7 +24,7 @@ COPY --from=builder /app/build /usr/share/nginx/html
 
 
 # Expose the port on which the app will be running 
-EXPOSE 3000
+EXPOSE 80
 
 #Start the app for base image serving command 
 # CMD ["npx", "serve", "build"]
