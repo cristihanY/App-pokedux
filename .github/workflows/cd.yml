@@ -1,0 +1,30 @@
+name: CD Pipeline
+
+on:
+  workflow_run:
+    workflows: ["CI Pipeline"]
+    types:
+        - completed
+  
+
+jobs:
+  build:
+
+    runs-on: self-hosted
+
+    steps:
+
+      - name: Pull docker image
+        run: sudo docker pull cristihan/app-pokedux:latest
+
+      - name: Delete old docker container
+        run: sudo docker rm -f app-pokedux-container || true
+
+      - name: Stop old docker container
+        run: sudo docker stop app-pokedux-container || true
+
+      - name: Remove old docker container
+        run: sudo docker rm app-pokedux-container || true
+
+      - name: Run Docker Container
+        run: sudo docker run -d -p 3000:3000 --name app-pokedux-container cristihan/app-pokedux
