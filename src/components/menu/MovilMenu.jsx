@@ -13,7 +13,7 @@ const MovilMenu = ({ onHideMenu }) => {
         <img src={X} alt="Ocultar" />
       </button>
     <a href="#-">Pokemons</a>
-    <a href="#-">N Pokemons</a>
+    <a href="#-">N Pokemons a la vi</a>
     <a href="#-">Mas</a>
   </div>
     </>
